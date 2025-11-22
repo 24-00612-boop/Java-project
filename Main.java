@@ -39,10 +39,7 @@ public class Main {
         } while (choice != 5);
     }
 
-    // ===============================
-    //         MAIN MENU UI
-    // ===============================
-
+    // MAIN MENU UI
     public static void showMenu() {
         System.out.println("\n================ MAIN MENU ================");
         System.out.println("1. Add Allowance");
@@ -52,10 +49,7 @@ public class Main {
         System.out.println("5. Exit");
     }
 
-    // ===============================
-    //       ADD ALLOWANCE
-    // ===============================
-
+    // ADD ALLOWANCE
     public static void addAllowance(Student student) {
 
         int id = transactionHistory.size() + 1;
@@ -71,10 +65,7 @@ public class Main {
         System.out.println("\nAllowance added successfully!");
     }
 
-    // ===============================
-    //       ADD EXPENSE
-    // ===============================
-
+    // ADD EXPENSE
     public static void addExpense(Student student) {
 
         int id = transactionHistory.size() + 1;
@@ -117,18 +108,12 @@ public class Main {
         }
     }
 
-    // ===============================
-    //          BALANCE
-    // ===============================
-
+    // BALANCE
     public static void showBalance(Student student) {
         System.out.println("\nCurrent Balance: " + student.getBalance() + " PHP");
     }
-
-    // ===============================
-    //          HISTORY
-    // ===============================
-
+    
+    // HISTORY
     public static void showHistory() {
         if (transactionHistory.isEmpty()) {
             System.out.println("\nNo transactions recorded.");
@@ -142,10 +127,7 @@ public class Main {
         }
     }
 
-    // ======================================================
-    //              VALIDATION / ERROR HANDLING
-    // ======================================================
-
+    // VALIDATION / ERROR HANDLING
     // MENU CHOICE
     public static int getMenuChoice(String msg) {
         System.out.print(msg);
